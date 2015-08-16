@@ -4,4 +4,14 @@ body {
   background-color: #efefef; }
 
   .center {
-    width: 80%; }
+    margin: 0 auto;
+    -webkit-box-shadow: 2px 3px 25px 3px #535259;
+    -moz-box-shadow: 2px 3px 25px 3px #535259;
+    box-shadow: 2px 3px 25px 3px #535259;
+    width: 75%;
+    height: 100%; }
+    .center .header {
+      height: 150px;
+      width: 100%;
+      background-color: #535259;
+      border-bottom: 1px solid #a7c06a; }
