@@ -1,0 +1,31 @@
+<html>
+	<head>
+	{% assets "scss_all" %}
+		<link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
+	{% endassets %}
+	</head>
+
+	<body>
+		<div class='full'>
+			<div class='center'>
+				{% block header %}
+				<div class='header'>
+					<div class="navigation">
+						<a href="/">Home</a>
+						<a href="{{ url_for('info') }}">Information</a>
+						<a href="{{ url_for('rsvp') }}">RSVP<a>
+					</div>
+				</div>
+				{% endblock %}
+				<div class="body">
+					<div class="left">
+						{% block content %}
+						{% endblock %}
+					</div>
+					<div class="right">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

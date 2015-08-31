@@ -1,16 +1,7 @@
-<html>
-	<head>
-	{% assets "scss_all" %}
-		<link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
-	{% endassets %}
-	</head>
+{% extends "base.html" %}
 
-	<body>
-		<div class='full'>
-			<div class='center'>
-				<div class='header'>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+{% block content %}
+<p id="home-content">
+	Here is our wedding website. Hopefully it works and it doesn't suck.
+</p>
+{% endblock %}

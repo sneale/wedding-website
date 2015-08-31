@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p id="rsvp-content">
+	This is where people will send their rsvps.
+</p>
+<form action="{{ url_for('rsvp') }}" method="POST">
+	{% if error %}<p>{{ error }}</p>{% endif %}
+	<label for="name">Your name</label>
+	<input type='text' id="name" name="name">
+	<div class='response'>
+		<h3>Are you attending?</h3>
+		<label for='attending'>Wouldn't miss it!</label>
+		<input type='radio' id='attending' name='attending'>
+		<label for='notAttending'>Wish I could</name>
+		<input type='radio' id='notAttending' name='notAttending'>
+	</div>
+
+	<input type='submit' class="button" value="Submit response">
+</form>
+{% endblock %}
