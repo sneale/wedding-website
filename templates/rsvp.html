@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block scripts %}
+	<script src="/static/js/forms.js"></script>
+{% endblock %}
+
 {% block content %}
 <p id="rsvp-content">
 	This is where people will send their rsvps.
@@ -11,9 +15,9 @@
 	<div class='response'>
 		<h3>Are you attending?</h3>
 		<label for='attending'>Wouldn't miss it!</label>
-		<input type='radio' id='attending' name='attending'>
+		<input class='radio-button' type='radio' onclick='check()' id='attending' name='attending'>
 		<label for='notAttending'>Wish I could</name>
-		<input type='radio' id='notAttending' name='notAttending'>
+		<input class='radio-button' type='radio' onclick='check()' id='notAttending' name='attending'>
 	</div>
 
 	<input type='submit' class="button" value="Submit response">

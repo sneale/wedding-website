@@ -1,8 +1,11 @@
 <html>
 	<head>
-	{% assets "scss_all" %}
-		<link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
-	{% endassets %}
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		{% assets "scss_all" %}
+			<link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
+		{% endassets %}
+		{% block scripts %}
+		{% endblock %}
 	</head>
 
 	<body>
