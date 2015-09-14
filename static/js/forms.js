@@ -1,8 +1,10 @@
 $(function() {
 	check = function() {
-		console.log(this.checked)
-		// if (this.checked == true) {
-		// 	this.checked = false;
-		// }		
+		if ($("#guest")[0].checked) {
+			$(".plus_one").show();
+		} else {
+			$(".plus_one").hide();
+		}
 	}
+	check()
 });

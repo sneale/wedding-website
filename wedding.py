@@ -25,16 +25,22 @@ def rsvp():
 	from models import Guest
 	error = ''
 	if request.method == "POST":
+		if request.form.get('name') == '':
+			error = 'Name field cannot be blank'
+			return render_template('rsvp.html', error=error)
+		elif request.form.get('email') == '':
+			error = "Please enter an email address"
+			return render_template('rsvp.html', error=error)
 		if 'name' in request.form:
-			if request.form.get('name') == '':
-				error = 'Name field cannot be blank'
-				return render_template('rsvp.html', error=error)
-			elif not request.form.get('attending') and not request.form.get('notAttending'):
+			if not request.form.get('attending') and not request.form.get('notAttending'):
 				error = 'Must RSVP with a resonse'
 				return render_template('rsvp.html', error=error)
 			else:
-				attending = True if request.form.get('attending') else False
-				guest = Guest(request.form.get('name'), attending=attending)
+				attending = "Yes" if request.form.get('attending') else "No"
+				email = request.form.get('email')
+				plus_one = request.form.get('plus_one')
+				comments = request.form.get('comments')
+				guest = Guest(request.form.get('name'), attending=attending, email=email, comments=comments, plus_one=plus_one)
 				db.session.add(guest)
 				db.session.commit()
 	return render_template('rsvp.html')

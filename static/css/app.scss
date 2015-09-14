@@ -4,10 +4,11 @@ html {
 body {
 	height: 100%;
 	font-family: Helvetica;
-	background-color: #efefef;
+	background-color: #000000;
 }
 
 .center {
+	background: #F8F8FF;
 	margin: 0 auto;
 	-webkit-box-shadow: 2px 3px 25px 3px rgba(83,82,89,1);
 	-moz-box-shadow: 2px 3px 25px 3px rgba(83,82,89,1);
@@ -15,9 +16,41 @@ body {
 	width: 75%;
 	height: 100%;
 	.header {
-		height: 150px;
+		height: 100px;
 		width: 100%;
 		background-color: #535259;
 		border-bottom: 1px solid #a7c06a;
+		.selected {
+			border-bottom: 1px solid #a7c06a;
+		}
+		a {
+			color: #F8F8FF;
+			padding: 5px;
+			margin: 0 5px;
+			border: none;
+			text-decoration: none;
+		}
+	}
+	.plus_one {
+		display: none;
+	}
+	label, input {
+		display: block;
+		float: left;
+		position: relative;
+	}
+	.box-left {
+		width: 40%;
+		float: left;
+		margin: 10px
+	}
+	.box-right {
+		width: 40%;
+		float: right;
+		margin: 10px;
+	}
+	.box-center {
+		width: 40%;
+		margin: 10px auto;
 	}
 }

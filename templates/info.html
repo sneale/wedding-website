@@ -1,7 +1,19 @@
 {% extends "base.html" %}
 
+{% block header %}
+<div class='header'>
+	<div class="navigation">
+		<a href="/">Home</a>
+		<a class='selected' href="{{ url_for('info') }}">Information</a>
+		<a href="{{ url_for('rsvp') }}">RSVP<a>
+	</div>
+</div>
+{% endblock %}
+
 {% block content %}
-<p id="info-content">
-	Here is info section. This will have information on the location and everything.
-</p>
+<div class='box-left'>
+	<p id="info-content">
+		Here is info section. This will have information on the location and everything.
+	</p>
+</div>
 {% endblock %}

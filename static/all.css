@@ -1,9 +1,10 @@
 body {
   height: 100%;
   font-family: Helvetica;
-  background-color: #efefef; }
+  background-color: #000000; }
 
   .center {
+    background: #F8F8FF;
     margin: 0 auto;
     -webkit-box-shadow: 2px 3px 25px 3px #535259;
     -moz-box-shadow: 2px 3px 25px 3px #535259;
@@ -11,7 +12,32 @@ body {
     width: 75%;
     height: 100%; }
     .center .header {
-      height: 150px;
+      height: 100px;
       width: 100%;
       background-color: #535259;
       border-bottom: 1px solid #a7c06a; }
+      .center .header .selected {
+        border-bottom: 1px solid #a7c06a; }
+        .center .header a {
+          color: #F8F8FF;
+          padding: 5px;
+          margin: 0 5px;
+          border: none;
+          text-decoration: none; }
+    .center .plus_one {
+      display: none; }
+      .center label, .center input {
+        display: block;
+        float: left;
+        position: relative; }
+        .center .box-left {
+          width: 40%;
+          float: left;
+          margin: 10px; }
+          .center .box-right {
+            width: 40%;
+            float: right;
+            margin: 10px; }
+            .center .box-center {
+              width: 40%;
+              margin: 10px auto; }
