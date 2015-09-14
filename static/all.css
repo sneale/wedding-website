@@ -1,43 +1,72 @@
-body {
-  height: 100%;
-  font-family: Helvetica;
-  background-color: #000000; }
+@font-face {
+  font-family: Nexa Rust Black;
+  src: url('/static/fonts/NexaRustSans-Black-Free.otf'); }
 
-  .center {
-    background: #F8F8FF;
-    margin: 0 auto;
-    -webkit-box-shadow: 2px 3px 25px 3px #535259;
-    -moz-box-shadow: 2px 3px 25px 3px #535259;
-    box-shadow: 2px 3px 25px 3px #535259;
-    width: 75%;
-    height: 100%; }
-    .center .header {
-      height: 100px;
-      width: 100%;
-      background-color: #535259;
-      border-bottom: 1px solid #a7c06a; }
-      .center .header .selected {
-        border-bottom: 1px solid #a7c06a; }
-        .center .header a {
-          color: #F8F8FF;
-          padding: 5px;
-          margin: 0 5px;
-          border: none;
-          text-decoration: none; }
-    .center .plus_one {
-      display: none; }
-      .center label, .center input {
-        display: block;
-        float: left;
-        position: relative; }
-        .center .box-left {
-          width: 40%;
-          float: left;
-          margin: 10px; }
-          .center .box-right {
-            width: 40%;
-            float: right;
-            margin: 10px; }
-            .center .box-center {
+  @font-face {
+    font-family: Nexa Rust Shadow;
+    src: url('/static/fonts/NexaRustSlab-BlackShadow01-Free.otf'); }
+
+    @font-face {
+      font-family: Nexa Rust Light;
+      src: url('/static/fonts/NexaRustScriptL-0-Free.otf'); }
+
+      h3 {
+        font-family: Nexa Rust Light; }
+
+        body {
+          height: 100%;
+          font-family: Helvetica;
+          background-color: #000000; }
+
+          .center {
+            background: #F8F8FF;
+            margin: 0 auto;
+            -webkit-box-shadow: 2px 3px 25px 3px #535259;
+            -moz-box-shadow: 2px 3px 25px 3px #535259;
+            box-shadow: 2px 3px 25px 3px #535259;
+            width: 75%;
+            height: 100%; }
+            .center .header {
+              height: 100px;
+              width: 100%;
+              background-color: #535259;
+              border-bottom: 2px solid #a7c06a; }
+              .center .header .selected {
+                border-bottom: 1px solid #a7c06a; }
+                .center .header a {
+                  color: #a7c06a;
+                  padding: 5px;
+                  margin: 0 5px;
+                  border: none;
+                  text-decoration: none;
+                  font-family: Nexa Rust Shadow; }
+            .center .plus_one {
+              display: none; }
+              .center label, .center input {
+                display: inline-block;
+                float: left;
+                position: relative;
+                margin: 10px; }
+                .center input {
+                  left: 30px;
+                  margin: 10px auto; }
+                  .center .info, .center .response, .center .extra {
+                    float: left;
+                    width: 100%;
+                    display: block; }
+                    .center .item {
+                      width: 100%;
+                      display: inline-block; }
+                      .center .item .button {
+                        height: 16px; }
+            .center .box-left {
               width: 40%;
-              margin: 10px auto; }
+              float: left;
+              margin: 10px; }
+              .center .box-right {
+                width: 40%;
+                float: right;
+                margin: 10px; }
+                .center .box-center {
+                  width: 40%;
+                  margin: 10px auto; }

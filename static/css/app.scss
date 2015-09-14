@@ -1,6 +1,24 @@
+@font-face {
+    font-family: Nexa Rust Black;
+    src: url('/static/fonts/NexaRustSans-Black-Free.otf');
+}
+
+@font-face {
+    font-family: Nexa Rust Shadow;
+    src: url('/static/fonts/NexaRustSlab-BlackShadow01-Free.otf');
+}
+
+@font-face {
+    font-family: Nexa Rust Light;
+    src: url('/static/fonts/NexaRustScriptL-0-Free.otf');
+}
+
 html {
 }
 
+h3 {
+	font-family: Nexa Rust Light;
+}
 body {
 	height: 100%;
 	font-family: Helvetica;
@@ -19,25 +37,43 @@ body {
 		height: 100px;
 		width: 100%;
 		background-color: #535259;
-		border-bottom: 1px solid #a7c06a;
+		border-bottom: 2px solid #a7c06a;
 		.selected {
 			border-bottom: 1px solid #a7c06a;
 		}
 		a {
-			color: #F8F8FF;
+			color: #a7c06a;
 			padding: 5px;
 			margin: 0 5px;
 			border: none;
 			text-decoration: none;
+			font-family: Nexa Rust Shadow;
 		}
 	}
 	.plus_one {
 		display: none;
 	}
 	label, input {
-		display: block;
+		display: inline-block;
 		float: left;
 		position: relative;
+		margin: 10px;
+	}
+	input {
+		left: 30px;
+		margin: 10px auto;
+	}
+	.info, .response, .extra {
+		float: left;
+		width: 100%;
+		display: block;
+	}
+	.item {
+		width: 100%;
+		display: inline-block;
+		.button {
+			height: 16px;
+		}
 	}
 	.box-left {
 		width: 40%;
