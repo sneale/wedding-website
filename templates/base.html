@@ -9,6 +9,7 @@
 	</head>
 
 	<body>
+		<div class='all'></div>
 		<div class='full'>
 			<div class='center'>
 				{% block header %}
@@ -21,12 +22,11 @@
 				</div>
 				{% endblock %}
 				<div class="body">
-					<div class="left">
-						{% block content %}
-						{% endblock %}
-					</div>
-					<div class="right">
-					</div>
+					{% block content %}
+					{% endblock %}
+				</div>
+				<div class='footer-image'>
+					<img src='/static/img/background_6.jpg'>
 				</div>
 			</div>
 		</div>
