@@ -1,6 +1,54 @@
 <html>
 	<head>
+		<script src="https://use.typekit.net/xvv8crp.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/noisy/1.2/jquery.noisy.min.js"></script>
+		<script src="jquery.min.js"></script>
+		<script src="/static/js/jssor.slider.mini.js"></script>
+	    <script>
+	        jQuery(document).ready(function ($) {
+	            
+	            var jssor_1_SlideshowTransitions = [
+	              {$Duration:1200,$Opacity:2}
+	            ];
+	            
+	            var jssor_1_options = {
+	              $AutoPlay: true,
+	              $SlideshowOptions: {
+	                $Class: $JssorSlideshowRunner$,
+	                $Transitions: jssor_1_SlideshowTransitions,
+	                $TransitionsOrder: 1
+	              },
+	              $ArrowNavigatorOptions: {
+	                $Class: $JssorArrowNavigator$
+	              },
+	              $BulletNavigatorOptions: {
+	                $Class: $JssorBulletNavigator$
+	              }
+	            };
+	            
+	            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+	            
+	            //responsive code begin
+	            //you can remove responsive code if you don't want the slider scales while window resizes
+	            // function ScaleSlider() {
+	            //     var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+	            //     if (refSize) {
+	            //         refSize = Math.min(refSize, 1100);
+	            //         // jssor_1_slider.$ScaleWidth(refSize);
+	            //     }
+	            //     else {
+	            //         window.setTimeout(ScaleSlider, 30);
+	            //     }
+	            // }
+	            ScaleSlider();
+	            $(window).bind("load", ScaleSlider);
+	            $(window).bind("resize", ScaleSlider);
+	            $(window).bind("orientationchange", ScaleSlider);
+	            //responsive code end
+	        });
+	    </script>
 		{% assets "scss_all" %}
 			<link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
 		{% endassets %}
@@ -9,26 +57,51 @@
 	</head>
 
 	<body>
-		<div class='all'></div>
-		<div class='full'>
-			<div class='center'>
-				{% block header %}
-				<div class='header'>
+		<div class='center'>
+			<div class='header tk-trajan-sans-pro'>
+				<img id="header-image" src="/static/img/Header.jpg">
+				<div class='nav-container'>
 					<div class="navigation">
+						{% block nav %}
 						<a href="/">Home</a>
 						<a href="{{ url_for('info') }}">Information</a>
-						<a href="{{ url_for('rsvp') }}">RSVP<a>
+						<a href="{{ url_for('rsvp') }}">RSVP</a>
+						{% endblock %}
 					</div>
 				</div>
+			</div>
+		    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 150px; left: 0px; width: 1300px; height: 700px; overflow: hidden; visibility: hidden;">
+		        <!-- Loading Screen -->
+		        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+		            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+		            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+		        </div>
+		        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 700px; overflow: hidden;">
+		            <div data-p="112.50" style="display: none;">
+		                <img style="width: 1100px;" data-u="image" src="/static/img/engagement1.jpg" />
+		            </div>
+		            <div data-p="112.50" style="display: none;">
+		                <img style="width: 1300px;" data-u="image" src="/static/img/jands1.jpg" />
+		            </div>
+		            <div data-p="112.50" style="display: none;">
+		                <img style="width: 1300px;" data-u="image" src="/static/img/jands2.png" />
+		            </div>
+		        </div>
+		        <!-- Bullet Navigator -->
+		        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:6px;" data-autocenter="1">
+		            <!-- bullet navigator item prototype -->
+		            <div data-u="prototype" style="width:16px;height:16px;"></div>
+		        </div>
+		        <!-- Arrow Navigator -->
+		        <span data-u="arrowleft" class="jssora12l" style="top:123px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+		        <span data-u="arrowright" class="jssora12r" style="top:123px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+		    </div>
+
+			<div class="content">
+				{% block content %}
 				{% endblock %}
-				<div class="body">
-					{% block content %}
-					{% endblock %}
-				</div>
-				<div class='footer-image'>
-					<img src='/static/img/background_6.jpg'>
-				</div>
 			</div>
 		</div>
 	</body>
+	<img id="footer-image" src="/static/img/Footer.jpg">
 </html>

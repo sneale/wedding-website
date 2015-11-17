@@ -4,14 +4,10 @@
 	<script src="/static/js/forms.js"></script>
 {% endblock %}
 
-{% block header %}
-<div class='header'>
-	<div class="navigation">
-		<a href="/">HOME</a>
-		<a href="{{ url_for('info') }}">INFORMATION</a>
-		<a class='selected' href="{{ url_for('rsvp') }}">RSVP<a>
-	</div>
-</div>
+{% block nav %}
+	<a href="/">HOME</a>
+	<a href="{{ url_for('info') }}">INFORMATION</a>
+	<a class='selected' href="{{ url_for('rsvp') }}">RSVP</a>
 {% endblock %}
 
 {% block content %}

@@ -1,72 +1,83 @@
-@font-face {
-    font-family: Nexa Rust Black;
-    src: url('/static/fonts/NexaRustSans-Black-Free.otf');
-}
-
-@font-face {
-    font-family: Nexa Rust Shadow;
-    src: url('/static/fonts/NexaRustSlab-BlackShadow01-Free.otf');
-}
-
-@font-face {
-    font-family: Nexa Rust Light;
-    src: url('/static/fonts/NexaRustScriptL-0-Free.otf');
-}
-
 html {
+	padding-bottom: 120px;
+	min-height: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+
+body {
+	height: 100%;
+	margin: 0;
 }
 
 h3 {
-	font-family: Nexa Rust Light;
-}
-body {
-	height: 100%;
-	font-family: Helvetica;
-	background-color: #000000;
 }
 
+.tk-caflisch-script-pro {
+	font-size: 18px;
+}
+
+.left {
+	float: left;
+}
+.black {
+	background-color: #000000;
+	height: 50px;
+	width: 100%;
+}
+.white {
+	background-color: #ffffff;
+	height: 30px;
+	width: 100%;
+}
+.green {
+	background-color: #99cc66;
+	height: 30px;
+	width: 100%;
+}
 .center {
-	background: #F8F8FF;
+	background-color: #fff;
 	margin: 0 auto;
-	-webkit-box-shadow: 2px 3px 25px 3px rgba(83,82,89,1);
-	-moz-box-shadow: 2px 3px 25px 3px rgba(83,82,89,1);
-	box-shadow: 2px 3px 25px 3px rgba(83,82,89,1);
-	width: 75%;
-	height: 100%;
+	width: 1300px;
 	.header {
-		height: 100px;
-		width: 100%;
-		background-color: #535259;
-		border-bottom: 2px solid #a7c06a;
-		.selected {
-			border-bottom: 1px solid #a7c06a;
+		.nav-container {
+			position: absolute;
+			top: 95px;
+			width: 1300px;
 		}
-		a {
-			color: #a7c06a;
-			padding: 5px;
-			margin: 0 5px;
-			border: none;
-			text-decoration: none;
-			font-family: Nexa Rust Shadow;
+		.navigation {
+			width: 1100px;
+			margin: 10px auto;
+			text-align: justify;
+			a {
+				display: inline-block;
+				position: relative;
+				text-align: center;
+				border: none;
+				text-decoration: none;
+				color: #000000;
+				padding: 5px 45px;
+				&.selected {
+					border-bottom: 2px solid #99cc66;
+				}
+			}
+			&:after {
+				width: 100%;
+				content: '';
+				display: inline-block;
+			}
 		}
+		margin-bottom: 10px;
 	}
-	.plus_one {
-		display: none;
-	}
-	label, input {
-		display: inline-block;
-		float: left;
+	.content {
 		position: relative;
-		margin: 10px;
-	}
-	input {
-		left: 30px;
-		margin: 10px auto;
-	}
-	.info, .response, .extra {
 		float: left;
-		width: 100%;
-		display: block;
+		top: 150px;
+		width: 1300px;
+	}
+	.fs-embed .footer {
+		display: none;
 	}
 	.item {
 		width: 100%;
@@ -90,3 +101,61 @@ body {
 		margin: 10px auto;
 	}
 }
+
+#footer-image {
+	height: 120px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+#header-image {
+	height: 120px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.jssorb05 {
+    position: absolute;
+}
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 16px;
+    height: 16px;
+    background: url('img/b05.png') no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jssorb05 div { background-position: -7px -7px; }
+.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+.jssorb05 .av { background-position: -67px -7px; }
+.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+/* jssor slider arrow navigator skin 12 css */
+/*
+.jssora12l                  (normal)
+.jssora12r                  (normal)
+.jssora12l:hover            (normal mouseover)
+.jssora12r:hover            (normal mouseover)
+.jssora12l.jssora12ldn      (mousedown)
+.jssora12r.jssora12rdn      (mousedown)
+*/
+.jssora12l, .jssora12r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 30px;
+    height: 46px;
+    cursor: pointer;
+    background: url('img/a12.png') no-repeat;
+    overflow: hidden;
+}
+.jssora12l { background-position: -16px -37px; }
+.jssora12r { background-position: -75px -37px; }
+.jssora12l:hover { background-position: -136px -37px; }
+.jssora12r:hover { background-position: -195px -37px; }
+.jssora12l.jssora12ldn { background-position: -256px -37px; }
+.jssora12r.jssora12rdn { background-position: -315px -37px; }

@@ -1,74 +1,147 @@
-}; 
-  @font-face {
-    font-family: Nexa Rust Black;
-    src: url('/static/fonts/NexaRustSans-Black-Free.otf'); }
+html {
+  padding-bottom: 120px;
+  min-height: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative; }
 
-    @font-face {
-      font-family: Nexa Rust Shadow;
-      src: url('/static/fonts/NexaRustSlab-BlackShadow01-Free.otf'); }
+  body {
+    height: 100%;
+    margin: 0; }
 
-      @font-face {
-        font-family: Nexa Rust Light;
-        src: url('/static/fonts/NexaRustScriptL-0-Free.otf'); }
+    .tk-caflisch-script-pro {
+      font-size: 18px; }
 
-        h3 {
-          font-family: Nexa Rust Light; }
+      .left {
+        float: left; }
 
-          body {
-            height: 100%;
-            font-family: Helvetica;
-            background-color: #000000; }
+        .black {
+          background-color: #000000;
+          height: 50px;
+          width: 100%; }
 
-            .left {
-              float: left; }
+          .white {
+            background-color: #ffffff;
+            height: 30px;
+            width: 100%; }
+
+            .green {
+              background-color: #99cc66;
+              height: 30px;
+              width: 100%; }
 
               .center {
                 background-color: #fff;
                 margin: 0 auto;
-                -webkit-box-shadow: 2px 3px 25px 3px #535259;
-                -moz-box-shadow: 2px 3px 25px 3px #535259;
-                box-shadow: 2px 3px 25px 3px #535259;
-                width: 1100px; }
+                width: 1300px; }
                 .center .header {
-                  height: 100px;
-                  width: 1100px;
-                  background-image: url('/static/img/lime_green.jpg');
-                  border-bottom: 5px solid #000000;
-                  border-bottom: 1px solid #000000; }
-                  .center a {
-                    color: #000000;
-                    padding: 5px;
-                    margin: 0 5px;
-                    border: none;
-                    text-decoration: none;
-                    font-family: Nexa Rust Shadow; }
+                  margin-bottom: 10px; }
+                  .center .header .nav-container {
+                    position: absolute;
+                    top: 95px;
+                    width: 1300px; }
+                    .center .header .navigation {
+                      width: 1100px;
+                      margin: 10px auto;
+                      text-align: justify; }
+                      .center .header .navigation a {
+                        display: inline-block;
+                        position: relative;
+                        text-align: center;
+                        border: none;
+                        text-decoration: none;
+                        color: #000000;
+                        padding: 5px 45px; }
+                        .center .header .navigation a.selected {
+                          border-bottom: 2px solid #99cc66; }
+                      .center .header .navigation:after {
+                        width: 100%;
+                        content: '';
+                        display: inline-block; }
+                .center .content {
+                  position: relative;
+                  float: left;
+                  top: 150px;
+                  width: 1300px; }
+                  .center .fs-embed .footer {
+                    display: none; }
+                    .center .item {
+                      width: 100%;
+                      display: inline-block; }
+                      .center .item .button {
+                        height: 16px; }
+                .center .box-left {
+                  width: 40%;
+                  float: left;
+                  margin: 10px; }
+                  .center .box-right {
+                    width: 40%;
+                    float: right;
+                    margin: 10px; }
+                    .center .box-center {
+                      width: 40%;
+                      margin: 10px auto; }
 
-  .body {
-    min-height: 650px; }
+#footer-image {
+  height: 120px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 
-    .footer-image img {
-      width: 100%;
-      height: 300px; }
+  #header-image {
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; }
 
-      .fs-embed .footer {
-        display: none; }
+    .jssorb05 {
+      position: absolute; }
 
-        .item {
-          width: 100%;
-          display: inline-block; }
-          .item .button {
-            height: 16px; }
+      .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: url('img/b05.png') no-repeat;
+        overflow: hidden;
+        cursor: pointer; }
 
-  .box-left {
-    width: 40%;
-    float: left;
-    margin: 10px; }
+        .jssorb05 div {
+          background-position: -7px -7px; }
 
-    .box-right {
-      width: 40%;
-      float: right;
-      margin: 10px; }
+          .jssorb05 div:hover, .jssorb05 .av:hover {
+            background-position: -37px -7px; }
 
-      .box-center {
-        width: 40%;
-        margin: 10px auto; }
+            .jssorb05 .av {
+              background-position: -67px -7px; }
+
+              .jssorb05 .dn, .jssorb05 .dn:hover {
+                background-position: -97px -7px; }
+
+                .jssora12l, .jssora12r {
+                  display: block;
+                  position: absolute;
+                  width: 30px;
+                  height: 46px;
+                  cursor: pointer;
+                  background: url('img/a12.png') no-repeat;
+                  overflow: hidden; }
+
+                  .jssora12l {
+                    background-position: -16px -37px; }
+
+                    .jssora12r {
+                      background-position: -75px -37px; }
+
+                      .jssora12l:hover {
+                        background-position: -136px -37px; }
+
+                        .jssora12r:hover {
+                          background-position: -195px -37px; }
+
+                          .jssora12l.jssora12ldn {
+                            background-position: -256px -37px; }
+
+                            .jssora12r.jssora12rdn {
+                              background-position: -315px -37px; }

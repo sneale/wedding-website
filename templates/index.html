@@ -1,13 +1,9 @@
 {% extends "base.html" %}
 
-{% block header %}
-<div class='header'>
-	<div class="navigation">
-		<a class='selected' href="/">HOME</a>
-		<a href="{{ url_for('info') }}">INFORMATION</a>
-		<a href="{{ url_for('rsvp') }}">RSVP<a>
-	</div>
-</div>
+{% block nav %}
+	<a class="selected" href="/">HOME</a>
+	<a href="{{ url_for('info') }}">INFORMATION</a>
+	<a href="{{ url_for('rsvp') }}">RSVP</a>
 {% endblock %}
 
 {% block content %}

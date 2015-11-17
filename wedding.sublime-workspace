@@ -1,0 +1,444 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/sam/wedding-website/models.py",
+		"/home/sam/wedding-website/templates/rsvp.html",
+		"/home/sam/wedding-website/templates/info.html",
+		"/home/sam/wedding-website/templates/index.html",
+		"/home/sam/wedding-website/templates/guestlist.html",
+		"/home/sam/wedding-website/templates/base.html",
+		"/home/sam/wedding-website/static/js/forms.js",
+		"/home/sam/wedding-website/static/css/app.scss",
+		"/home/sam/wedding-website/wedding.py",
+		"/home/sam/wedding-website/db.py",
+		"/home/sam/wedding-website/requirements.txt",
+		"/home/sam/fluidware/reviewroom/project/manage.py",
+		"/home/sam/fluidware/reviewroom/project/settings/local.py",
+		"/home/sam/fluidware/apps/chide/feedback/surveys/templates/surveys/survey/signature.html",
+		"/home/sam/fluidware/common/media/js/surveys/survey.js",
+		"/home/sam/fluidware/common/media/js/surveys/editor.js",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/templates/reviewroom/admin/topbar.html",
+		"/home/sam/fluidware/apps/chide/feedback/surveys/options.py",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/templates/layouts/default.html",
+		"/home/sam/fluidware/common/media/css/reviewroom/layouts/teachamerica/app.scss",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/templates/settings.html",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/templates/rr/index.html",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/templates/layouts/teachamerica.html",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/templates/layouts/mindmills/rr/index.html",
+		"/home/sam/fluidware/apps/chide/feedback/surveys/reports.py",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/forms.py",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/reports/reports.py",
+		"/home/sam/fluidware/apps/chide/feedback/surveys/forms.py",
+		"/home/sam/fluidware/apps/chide/billing/packages/models.py",
+		"/home/sam/fluidware/reviewroom/project/settings/layouts.py",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/util.py",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/reviewroom.py",
+		"/home/sam/fluidware/apps/utils/templatetags/geoip.py",
+		"/home/sam/fluidware/common/media/css/reviewroom/layouts/canarie2/app.sass",
+		"/home/sam/fluidware/common/media/css/reviewroom/layouts/canarie2/app.scss",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/templates/layouts/canarie2.html",
+		"/home/sam/fluidware/common/media/fonts/FontAwesome.otf",
+		"/home/sam/fluidware/common/media/css/reviewroom/layouts/acsa/app.scss",
+		"/home/sam/fluidware/reviewroom/media/c/core.css",
+		"/home/sam/fluidware/reviewroom/project/settings/__init__.py",
+		"/home/sam/fluidware/apps/GChartWrapper/tests.py",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/admin/statistics.py",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/templates/reviewroom/admin/stats/geo.html",
+		"/home/sam/fluidware/reviewroom/project/settings/compress.py",
+		"/home/sam/fluidware/apps/chide/products/reviewroom/models.py",
+		"/home/sam/fluidware/apps/chide/common/settings.py",
+		"/home/sam/fluidware/apps/crammer/management/commands/cram.py",
+		"/home/sam/fluidware/reviewroom/media/c/resources_admin.css",
+		"/home/sam/fluidware/apps/crammer/utils.py",
+		"/home/sam/fluidware/apps/chide/common/media/settings.py",
+		"/home/sam/fluidware/reviewroom/vinny/settings.py",
+		"/home/sam/fluidware/reviewroom/media/c/tags.css",
+		"/home/sam/fluidware/reviewroom/media/c/canarie2.css",
+		"/home/sam/fluidware/reviewroom/media/c/rocket.css",
+		"/home/sam/fluidware/reviewroom/media/c/cbc.css",
+		"/home/sam/Documents/fluidware/reviewroom/project/manage.py",
+		"/home/sam/Documents/fluidware/apps/chide/products/reviewroom/util.py",
+		"/home/sam/Documents/fluidware/reviewroom/project/settings/default_db.py",
+		"/home/sam/Documents/fluidware/reviewroom/project/settings/local.py",
+		"/home/sam/pycalendar/client_calendar/models.py",
+		"/home/sam/pycalendar/pycalendar/settings.py",
+		"/home/sam/pycalendar/client_calendar/admin.py",
+		"/home/sam/pycalendar/client_calendar/migrations/0001_initial.py",
+		"/home/sam/pycalendar/README",
+		"/home/sam/Documents/data_project/data_project/settings.py",
+		"/home/sam/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"*.js, *.html",
+			"-*.po*, *.html",
+			"-*.po*, *.py",
+			"-*.po*",
+			"-*.po*, *.py",
+			"-*.po*",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"1100",
+			".center",
+			"checkbox",
+			"()\n",
+			"django-",
+			"django",
+			"signature",
+			"h2",
+			"index.html",
+			"Need An Account",
+			"section register",
+			"button",
+			"odak-red",
+			"h1",
+			"download",
+			"odak",
+			"@",
+			"white",
+			"@",
+			"@media",
+			"help_text",
+			"BooleanFi",
+			"help_text",
+			"BooleanField",
+			"label=",
+			"Unsubscribe",
+			"Email correspond",
+			"datacell",
+			"Oswald-Bold",
+			"h1",
+			" |",
+			"topbar.html",
+			"h2",
+			".right",
+			"options",
+			"sidebar",
+			"form ",
+			".section",
+			".search",
+			"search",
+			"splash",
+			"sec-nav",
+			"section",
+			"form",
+			"h2 ",
+			"dropdown li",
+			":hover",
+			"li img",
+			"font-weight: b",
+			"<!",
+			"/*",
+			"web-bg",
+			"News",
+			"Oswald",
+			"@font-face",
+			"FontAwesome",
+			"Oswald",
+			".row",
+			"max-width: 9",
+			"max-width",
+			"img/",
+			"img",
+			"hamburger",
+			"canarie",
+			"hamburger",
+			"canarie/",
+			"dropdown-red",
+			"utf-8",
+			"cn-07",
+			"SignUp",
+			"/usr/local/share",
+			"geo",
+			"geoip",
+			"django_geoip",
+			"SignUp.obje",
+			"def compress",
+			"rebuild",
+			"pack_item",
+			"uglify",
+			"compass",
+			"copmass",
+			"Popen",
+			"compile_sass",
+			"StylePro",
+			"return",
+			"print",
+			"StyleProc",
+			"def compress",
+			"):\n",
+			"compress",
+			"modern",
+			"app_admin",
+			"def rebuild",
+			"rebuild",
+			"pack_item",
+			"pack",
+			"resources_admin",
+			"local"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"base.html",
+				"templates/base.html"
+			],
+			[
+				"requirem",
+				"requirements.txt"
+			],
+			[
+				"reviewroommanage.py",
+				"reviewroom/project/manage.py"
+			],
+			[
+				"local.py",
+				"reviewroom/project/settings/local.py"
+			],
+			[
+				"signature.html",
+				"apps/chide/feedback/surveys/templates/surveys/survey/signature.html"
+			],
+			[
+				"survey.js",
+				"common/media/js/surveys/survey.js"
+			],
+			[
+				"default.html",
+				"apps/chide/products/reviewroom/templates/layouts/default.html"
+			],
+			[
+				"teachamericahtml",
+				"apps/chide/products/reviewroom/templates/layouts/teachamerica.html"
+			],
+			[
+				"reports",
+				"apps/chide/products/reviewroom/reports/reports.py"
+			],
+			[
+				"teachscss",
+				"common/media/css/reviewroom/layouts/teachamerica/app.scss"
+			],
+			[
+				"reviewroomsettings",
+				"apps/chide/products/reviewroom/templates/settings.html"
+			],
+			[
+				"surveyreportspy",
+				"apps/chide/feedback/surveys/reports.py"
+			],
+			[
+				"topbar",
+				"apps/chide/products/reviewroom/templates/reviewroom/admin/topbar.html"
+			],
+			[
+				"layouts.py",
+				"reviewroom/project/settings/layouts.py"
+			],
+			[
+				"canarie2.sass",
+				"common/media/css/reviewroom/layouts/canarie2/app.sass"
+			],
+			[
+				"canarie2.h",
+				"apps/chide/products/reviewroom/templates/layouts/canarie2.html"
+			],
+			[
+				"statistics.py",
+				"apps/chide/products/reviewroom/admin/statistics.py"
+			],
+			[
+				"geo.html",
+				"apps/chide/products/reviewroom/templates/reviewroom/admin/stats/geo.html"
+			],
+			[
+				"reviewroommodels.py",
+				"apps/chide/products/reviewroom/models.py"
+			],
+			[
+				"compress",
+				"reviewroom/project/settings/compress.py"
+			],
+			[
+				"statistics",
+				"apps/chide/products/reviewroom/admin/statistics.py"
+			],
+			[
+				"geoip",
+				"apps/utils/templatetags/geoip.py"
+			],
+			[
+				"settings.py",
+				"apps/chide/common/settings.py"
+			],
+			[
+				"settings",
+				"reviewroom/vinny/settings.py"
+			],
+			[
+				".css",
+				"reviewroom/media/c/rocket.css"
+			],
+			[
+				"cram.py",
+				"apps/crammer/management/commands/cram.py"
+			],
+			[
+				"reviewroomutil.py",
+				"apps/chide/products/reviewroom/util.py"
+			],
+			[
+				"manage.py",
+				"reviewroom/project/manage.py"
+			],
+			[
+				"client_admin",
+				"client_calendar/admin.py"
+			],
+			[
+				"client_calendar/mig",
+				"client_calendar/migrations/0001_initial.py"
+			],
+			[
+				"settings.",
+				"pycalendar/settings.py"
+			],
+			[
+				"model",
+				"client_calendar/models.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
