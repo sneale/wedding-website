@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block nav %}
+	<a href="/">Home</a>
+	<a class='' href="{{ url_for('info') }}">Information</a>
+	<a class="selected" href="{{ url_for('details') }}">Itinerary</a>	
+	<a href="{{ url_for('rsvp') }}">RSVP</a>
+{% endblock %}
+
+{% block content %}
+<div class='box-center'>
+	<div id="details-text">
+		<h3>
+			Wedding Day Itinerary
+		</h3>
+		<p>
+			3:30 pm Arrive at NeXT<br>
+
+			Your goal is to get there before Jenn does<br>
+
+			4:00 pm Ceremony<br>
+
+			Get Sam and Jenn officially hitched<br>
+
+			4:30 pm Family Photos/Cocktails and Canapés<br>
+
+			Now that the official stuff is over, time to ease into party mode.<br>
+
+			For the family, we’ll be taking a few pictures after the ceremony. <br>
+			Remember, the more organized you are, the faster you can eat <br>
+
+			6:00 pm Dinner <br> 
+
+			Don’t fill up on canapés, there’s lots to come.<br> 
+
+			9:00 pm Dance the Night Away<br> 
+
+			Don’t forget to pack your comfy shoes!<br> 
+		</p>
+	</div>
+</div>
+{% endblock %}

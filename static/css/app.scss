@@ -11,7 +11,14 @@ body {
 	margin: 0;
 }
 
-h3 {
+h1, h2, h3, h4 {
+	font-family: clarendon-urw;
+	margin: 5px;
+}
+
+p {
+	font-family: caflisch-script-pro;
+	font-size: 36px;
 }
 
 .tk-caflisch-script-pro {
@@ -31,6 +38,26 @@ h3 {
 	height: 30px;
 	width: 100%;
 }
+.home-text {
+	text-align: center;
+	min-height: 800px;
+	h1.jennsam {
+		color: #99cc66;
+		font-size: 75px;
+	}
+	h2 {
+		color: #000000;
+		font-family: clarendon-urw;
+		font-size: 37px;
+	}
+	h4 {
+		font-family: clarendon-urw;
+		font-weight: bold;
+		font-size: 20px;
+	}
+}
+
+
 .green {
 	background-color: #99cc66;
 	height: 30px;
@@ -101,7 +128,7 @@ h3 {
 		margin: 10px;
 	}
 	.box-center {
-		width: 40%;
+		width: 60%;
 		margin: 10px auto;
 	}
 }

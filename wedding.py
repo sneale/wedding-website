@@ -20,6 +20,10 @@ def home():
 def info():
 	return render_template('info.html')
 
+@app.route('/details')
+def details():
+	return render_template('details.html')
+
 @app.route('/rsvp', methods=['GET', 'POST'])
 def rsvp():
 	from models import Guest

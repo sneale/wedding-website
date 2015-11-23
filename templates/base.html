@@ -4,7 +4,6 @@
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/noisy/1.2/jquery.noisy.min.js"></script>
-		<script src="jquery.min.js"></script>
 		<script src="/static/js/jssor.slider.mini.js"></script>
 	    <script>
 	        jQuery(document).ready(function ($) {
@@ -42,13 +41,15 @@
 	            //         window.setTimeout(ScaleSlider, 30);
 	            //     }
 	            // }
-	            ScaleSlider();
-	            $(window).bind("load", ScaleSlider);
-	            $(window).bind("resize", ScaleSlider);
-	            $(window).bind("orientationchange", ScaleSlider);
+	            // Scal/eSlider();
+	            // $(window).bind("load", ScaleSlider);
+	            // $(window).bind("resize", ScaleSlider);
+	            // $(window).bind("orientationchange", ScaleSlider);
 	            //responsive code end
 	        });
 	    </script>
+	    {% block extra_scripts %}
+	    {% endblock %}
 		{% assets "scss_all" %}
 			<link rel=stylesheet type=text/css href="{{ ASSET_URL }}">
 		{% endassets %}
