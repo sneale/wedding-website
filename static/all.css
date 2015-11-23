@@ -63,13 +63,16 @@ html {
                   float: left;
                   top: 150px;
                   width: 1300px; }
-                  .center .fs-embed .footer {
-                    display: none; }
-                    .center .item {
-                      width: 100%;
-                      display: inline-block; }
-                      .center .item .button {
-                        height: 16px; }
+                  .center .fs-embed {
+                    margin: 0 auto;
+                    display: block; }
+                    .center .fs-embed .footer {
+                      display: none; }
+                .center .item {
+                  width: 100%;
+                  display: inline-block; }
+                  .center .item .button {
+                    height: 16px; }
                 .center .box-left {
                   width: 40%;
                   float: left;

@@ -76,8 +76,12 @@ h3 {
 		top: 150px;
 		width: 1300px;
 	}
-	.fs-embed .footer {
-		display: none;
+	.fs-embed {
+		margin: 0 auto;
+		display: block;
+		.footer {
+			display: none;
+		}
 	}
 	.item {
 		width: 100%;
