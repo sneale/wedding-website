@@ -62,13 +62,31 @@
 			<div class='header tk-trajan-sans-pro'>
 				<img id="header-image" src="/static/img/Header.jpg">
 				<div class='nav-container'>
+					{% block outernav %}
 					<div class="navigation">
 						{% block nav %}
-						<a href="/">Home</a>
-						<a href="{{ url_for('info') }}">Information</a>
-						<a href="{{ url_for('rsvp') }}">RSVP</a>
+						<a class="home" href="/">Home</a>
+						<div class='dropdown toplink'>
+							<a class="details" href="#">DETAILS</a>
+							<ul>
+								<li>
+									<a href="{{ url_for('details') }}">Itinerary</a>
+								</li>
+								<li>
+									<a href="{{ url_for('info') }}">REGISTRY</a>
+								</li>
+								<li>
+									<a href="{{ url_for('bridal') }}">BRIDAL PARTY</a>
+								</li>
+								<li>
+									<a class="last" href="{{ url_for('accomodations') }}">ACCOMODATIONS</a>
+								</li>
+							</ul>
+						</div>
+						<a class="rsvp" href="{{ url_for('rsvp') }}">RSVP</a>
 						{% endblock %}
 					</div>
+					{% endblock %}
 				</div>
 			</div>
 

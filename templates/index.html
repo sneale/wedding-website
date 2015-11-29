@@ -25,11 +25,12 @@
 	</script>
 {% endblock %}
 
-{% block nav %}
-	<a class="selected" href="/">HOME</a>
-	<a href="{{ url_for('info') }}">INFORMATION</a>
-	<a href="{{ url_for('details') }}">EVENT DETAILS</a>
-	<a href="{{ url_for('rsvp') }}">RSVP</a>
+{% block outernav %}
+	<div class='navigation nav-home'>
+		{% block nav %}
+			{{ super() }}
+		{% endblock %}
+	</div>
 {% endblock %}
 
 {% block content %}

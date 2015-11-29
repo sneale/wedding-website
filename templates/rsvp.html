@@ -4,11 +4,12 @@
 	<script src="/static/js/forms.js"></script>
 {% endblock %}
 
-{% block nav %}
-	<a href="/">HOME</a>
-	<a href="{{ url_for('info') }}">INFORMATION</a>
-	<a href="{{ url_for('details') }}">EVENT DETAILS</a>
-	<a class='selected' href="{{ url_for('rsvp') }}">RSVP</a>
+{% block outernav %}
+	<div class='navigation nav-rsvp'>
+		{% block nav %}
+			{{ super() }}
+		{% endblock %}
+	</div>
 {% endblock %}
 
 {% block content %}
