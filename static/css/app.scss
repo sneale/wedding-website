@@ -1,5 +1,5 @@
 html {
-	padding-bottom: 120px;
+	padding-bottom: 150px;
 	min-height: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -40,7 +40,7 @@ p {
 }
 .home-text {
 	text-align: center;
-	min-height: 800px;
+	min-height: 550px;
 	h1.jennsam {
 		color: #99cc66;
 		font-size: 75px;
@@ -87,8 +87,9 @@ p {
 				border: none;
 				text-decoration: none;
 				color: #000000;
+			}
+			a, .details {
 				padding: 5px 100px;
-				float: left;
 			}
 			a:hover {
 				background: #99cc66;
@@ -102,7 +103,7 @@ p {
 				ul {
 					display: none;
 					list-style: none;
-					position: relative;
+					position: absolute;
 					margin: 0;
 					padding: 0;
 					width: 100%;
@@ -153,6 +154,7 @@ p {
 		float: left;
 		top: 150px;
 		width: 1300px;
+		min-height: 800px;
 	}
 	.fs-embed {
 		margin: 0 auto;

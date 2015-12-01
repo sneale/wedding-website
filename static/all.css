@@ -1,5 +1,5 @@
 html {
-  padding-bottom: 120px;
+  padding-bottom: 150px;
   min-height: 100%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -35,7 +35,7 @@ html {
 
                 .home-text {
                   text-align: center;
-                  min-height: 800px; }
+                  min-height: 550px; }
                   .home-text h1.jennsam {
                     color: #99cc66;
                     font-size: 75px; }
@@ -76,54 +76,55 @@ html {
               text-align: center;
               border: none;
               text-decoration: none;
-              color: #000000;
-              padding: 5px 100px;
-              float: left; }
-              .center .header .navigation a:hover {
-                background: #99cc66; }
-                .center .header .navigation:after {
-                  width: 100%;
-                  content: '';
-                  display: inline-block; }
-                  .center .header .navigation .dropdown ul {
-                    display: none;
-                    list-style: none;
-                    position: relative;
-                    margin: 0;
-                    padding: 0;
-                    width: 100%; }
-                    .center .header .navigation .dropdown ul:hover {
+              color: #000000; }
+              .center .header .navigation a, .center .header .navigation .details {
+                padding: 5px 100px; }
+                .center .header .navigation a:hover {
+                  background: #99cc66; }
+                  .center .header .navigation:after {
+                    width: 100%;
+                    content: '';
+                    display: inline-block; }
+                    .center .header .navigation .dropdown ul {
+                      display: none;
+                      list-style: none;
+                      position: absolute;
+                      margin: 0;
+                      padding: 0;
+                      width: 100%; }
+                      .center .header .navigation .dropdown ul:hover {
+                        display: block; }
+                        .center .header .navigation .dropdown ul a {
+                          display: block;
+                          text-decoration: none;
+                          line-height: 40px;
+                          background-color: #ffffff;
+                          width: 100%;
+                          padding: 0;
+                          border-left: 1px solid #99cc66;
+                          border-right: 1px solid #99cc66; }
+                          .center .header .navigation .dropdown ul a:hover {
+                            background: #99cc66; }
+                      .center .header .navigation .dropdown ul a.last {
+                        border-bottom: 1px solid #99cc66; }
+                        .center .header .navigation .dropdown ul li {
+                          position: relative;
+                          margin: 0 auto;
+                          width: 100%;
+                          padding: 0;
+                          z-index: 5; }
+                          .center .header .navigation .dropdown ul li:hover {
+                            background-color: #777777; }
+                            .center .header .navigation .dropdown ul li:hover > ul {
+                              display: block; }
+                    .center .header .navigation .dropdown:hover ul {
                       display: block; }
-                      .center .header .navigation .dropdown ul a {
-                        display: block;
-                        text-decoration: none;
-                        line-height: 40px;
-                        background-color: #ffffff;
-                        width: 100%;
-                        padding: 0;
-                        border-left: 1px solid #99cc66;
-                        border-right: 1px solid #99cc66; }
-                        .center .header .navigation .dropdown ul a:hover {
-                          background: #99cc66; }
-                    .center .header .navigation .dropdown ul a.last {
-                      border-bottom: 1px solid #99cc66; }
-                      .center .header .navigation .dropdown ul li {
-                        position: relative;
-                        margin: 0 auto;
-                        width: 100%;
-                        padding: 0;
-                        z-index: 5; }
-                        .center .header .navigation .dropdown ul li:hover {
-                          background-color: #777777; }
-                          .center .header .navigation .dropdown ul li:hover > ul {
-                            display: block; }
-                  .center .header .navigation .dropdown:hover ul {
-                    display: block; }
     .center .content {
       position: relative;
       float: left;
       top: 150px;
-      width: 1300px; }
+      width: 1300px;
+      min-height: 800px; }
       .center .fs-embed {
         margin: 0 auto;
         display: block; }
